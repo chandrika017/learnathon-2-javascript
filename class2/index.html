@@ -15,20 +15,48 @@
     <li>js scooping,hoisting</li>
     <li>execution context,polyfilling,this keyword</li>
     <br/>
-    <h1>js variables & types</h1>
     <p id="ID"></p>
     <p id="var"></p>
     <p id="let"></p>
     <p id="const"></p>
+    <p id="fun"></p>
+    <p id="ero"></p>
+    <p id="erro"></p>
+    <p id="array"></p>
+    <p id="element"></p>
+    <p id="length"></p>
     <script>
-        x=5,y=6,z=x+y;
-        document.getElementById("ID").innerHTML="value 1 is: "+z;
-        var a=2,b=1,c=a+b;
-        document.getElementById("var").innerHTML="value 2 is: "+c;
-        let n1=2,n3=5,n4=n1+n3;
-        document.getElementById("let").innerHTML="value 3 is: "+n4;
-        const a1=4,a2=5,a3=a1+a2;
-        document.getElementById("const").innerHTML="value 4 is: "+a3;
+        //<h1>js variables & types</h1>
+        // x=5,y=6,z=x+y;
+        // document.getElementById("ID").innerHTML="value 1 is: "+z;
+        // var a=2,b=1,c=a+b;
+        // document.getElementById("var").innerHTML="value 2 is: "+c;
+        // let n1=2,n3=5,n4=n1+n3;
+        // document.getElementById("let").innerHTML="value 3 is: "+n4;
+        // const a1=4,a2=5,a3=a1+a2;
+        // document.getElementById("const").innerHTML="value 4 is: "+a3;
+        // <h1>function</h1>
+        // let x= myFunction(4,6);
+        // document.getElementById("fun").innerHTML=x;
+        // function myFunction(a,b){
+        //     return a*b;
+        // }
+
+
+        //<h1>arrow function</h1>
+        const x=(x,y)=>x*y;
+        document.getElementById("ero").innerHTML=x(5,5);
+        const a=(a,b)=>a+b;
+        document.getElementById("erro").innerHTML=a(5,5);
+
+        
+        // <h1>array</h1>
+        const flowers=['rose','tulip','jui'];
+        document.getElementById("array").innerHTML=flowers;
+        document.getElementById("element").innerHTML=flowers[2];
+        let length;
+        document.getElementById("length").innerHTML=flowers.length;
+
     </script>
 </body>
 </html>
